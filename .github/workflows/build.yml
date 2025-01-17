@@ -22,8 +22,8 @@ jobs:
 
       - uses: kiancross/checkstyle-annotations-action@v1
 
-      - name: Checkstyle
-        run: ./gradlew checkstyleAll --console=plain --warn
+      - name: Checkstyle 
+        run: ./gradlew checkstyleAll --console=plain --warn --debug
 
       - name: Build all Java packages
         run: ./gradlew build --console=plain --warn
